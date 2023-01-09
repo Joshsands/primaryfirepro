@@ -1,6 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import {
+  ApolloClient,
+  ApolloProvider,
+  InMemoryCache,
+  createHttpLink
+} from '@apollo/client';
+
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Estimator from './pages/Estimator';
@@ -15,6 +22,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return (
+    <ApolloProvider client={client}>
     <Router>
         <div>
           <Navigation />
@@ -28,6 +36,7 @@ function App() {
           </Routes>
         </div>
     </Router>
+    </ApolloProvider>
   );
 }
 
