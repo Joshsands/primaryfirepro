@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./App.css";
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Estimator from './pages/Estimator';
@@ -8,6 +8,8 @@ import Service from './pages/Service';
 import Portfolio from './pages/Portfolio';
 import Login from './pages/login';
 import Navigation from './components/Nav';
+
+import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
