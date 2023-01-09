@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Joshsands/primaryfirepro#readme",
   "dependencies": {
     "concurrently": "^7.6.0",
-    "graphql": "^16.6.0"
+    "graphql": "^16.6.0",
+    "react-router-dom": "^6.6.2"
   }
 }
